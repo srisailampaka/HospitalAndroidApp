@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="25dp" >
+
+    <TableLayout
+        android:id="@+id/item_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/name_pl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Kumar"
+                android:textColor="#382F65"
+                android:textSize="20sp" />
+        </TableRow>
+        
+        <TableRow 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            
+            <TextView 
+                android:id="@+id/date_time"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#382F65"
+                android:text="8/09/2015, 10:00AM"
+                android:textSize="16sp"/>
+        </TableRow>
+        <TableRow 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            
+            <TextView 
+                android:id="@+id/reason_pl"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#382F65"
+                android:textSize="16sp"
+                android:text="Suffering from fever"
+                
+                
+                
+                
+                />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
