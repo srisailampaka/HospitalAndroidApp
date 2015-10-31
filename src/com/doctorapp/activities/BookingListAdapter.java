@@ -10,11 +10,11 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-public class PatientListAdapter extends ArrayAdapter<Details> {
+public class BookingListAdapter extends ArrayAdapter<Details> {
 	private ArrayList<Details> detailsList;
 	private Context mContext;
 
-	public PatientListAdapter(Context mContext, ArrayList<Details> detailsList) {
+	public BookingListAdapter(Context mContext, ArrayList<Details> detailsList) {
 		super(mContext, R.id.item_list);
 
 		this.detailsList = detailsList;

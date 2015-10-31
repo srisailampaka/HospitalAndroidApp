@@ -1,8 +1,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:layout_marginLeft="20dp"
-    android:padding="5dp" >
+    android:background="@color/bg_color"
+    android:padding="5dp"
+    android:paddingLeft="20dp" >
 
     <TableLayout
         android:id="@+id/tableLayout1"
@@ -11,14 +12,13 @@
 
         <TableRow
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" 
-             android:layout_marginTop="42dp">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp" >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-               
                 android:text="Name"
                 android:textColor="#382F65"
                 android:textSize="18sp" />
@@ -26,7 +26,7 @@
             <EditText
                 android:id="@+id/name_et"
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"
+                android:layout_height="40dp"
                 android:layout_marginLeft="15dp"
                 android:background="@drawable/group_top_black"
                 android:ems="10" />
@@ -48,7 +48,7 @@
             <EditText
                 android:id="@+id/date_et"
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"
+                android:layout_height="40dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/group_top_black"
@@ -71,25 +71,22 @@
             <EditText
                 android:id="@+id/time_et"
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"
+                android:layout_height="40dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/group_top_black"
                 android:ems="10" />
-
-           
         </TableRow>
 
         <TableRow
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-             android:layout_marginTop="40dp" >
+            android:layout_marginTop="40dp" >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-               
                 android:text="Reason"
                 android:textColor="#382F65"
                 android:textSize="18sp" />
@@ -97,9 +94,8 @@
             <EditText
                 android:id="@+id/reason_et"
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"
+                android:layout_height="40dp"
                 android:layout_marginLeft="15dp"
-                
                 android:background="@drawable/group_top_black"
                 android:ems="10" />
         </TableRow>
@@ -113,9 +109,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="38dp"
         android:background="@drawable/background_button"
-        android:text="Submit"
-        android:textSize="20sp"
         android:padding="10dp"
-        android:textColor="@android:color/white" />
+        android:text="Submit"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
 
 </RelativeLayout>

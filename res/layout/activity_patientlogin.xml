@@ -1,7 +1,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:layout_margin="25dp" >
+    android:background="@color/bg_color"
+    android:padding="25dp" >
 
     <TextView
         android:layout_width="wrap_content"
@@ -35,7 +36,7 @@
             <EditText
                 android:id="@+id/pl_id"
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"
+                android:layout_height="40dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="90dp"
                 android:background="@drawable/group_top_black"
@@ -59,7 +60,7 @@
             <EditText
                 android:id="@+id/pl_password"
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"
+                android:layout_height="40dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/group_top_black"

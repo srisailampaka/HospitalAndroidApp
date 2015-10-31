@@ -10,11 +10,11 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name="com.doctorapp.activities.SplashActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,13 +22,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+         <activity 
+            android:name="com.doctorapp.activities.MainActivity"></activity>
         <activity 
             android:name="com.doctorapp.activities.DoctorLoginActivity"></activity>
         <activity 
             android:name="com.doctorapp.activities.NewPatientActivity"></activity>
-  
-       <activity android:name="com.doctorapp.activities.PatientDetailsActivity"></activity>
-       <activity android:name="com.doctorapp.activities.PatientListActiivity"></activity>
+    <activity android:name="com.doctorapp.activities.BookSuccessActivity"></activity>
+       <activity android:name="com.doctorapp.activities.BookAppointmentActivity"></activity>
+       <activity android:name="com.doctorapp.activities.BookingListActiivity"></activity>
        <activity android:name="com.doctorapp.activities.PatientLoginActivity"></activity></application>
        
 

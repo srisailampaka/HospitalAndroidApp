@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:padding="20dp" >
+
+    <Spinner
+        android:id="@+id/doctor_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:entries="@array/doctor_names"
+        android:background="@drawable/group_top_black" />
+
+    <EditText
+        android:id="@+id/date_et"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/doctor_spinner"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/group_top_black"
+        android:ems="10"
+        android:hint="date"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/time_et"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/date_et"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/group_top_black"
+        android:ems="10"
+        android:hint="time"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/reason_et"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/time_et"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/group_top_black"
+        android:ems="10"
+        android:hint="Reason"
+        android:paddingLeft="10dp" />
+
+    <Button
+        android:id="@+id/book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reason_et"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/background_button"
+        android:text="Book"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

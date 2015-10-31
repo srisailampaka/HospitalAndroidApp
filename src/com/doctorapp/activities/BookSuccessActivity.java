@@ -7,31 +7,31 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class PatientDetailsActivity extends Activity {
-	private Button createappointmentButton;
+public class BookSuccessActivity extends Activity {
+	private Button home;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_patientdetails);
+		setContentView(R.layout.activity_book_success);
 
-		createappointmentButton = (Button) findViewById(R.id.create_apt);
+		home = (Button) findViewById(R.id.home_button);
 
-		createappointmentButton.setOnClickListener(new OnClickListener() {
+		home.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent intent = new Intent(PatientDetailsActivity.this, MainActivity.class);
+				Intent intent = new Intent(BookSuccessActivity.this,
+						BookAppointmentActivity.class);
+				intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK); 
 				startActivity(intent);
+				finish();
 
 			}
 
 		});
-	
+
 	}
 
 }
-
-
-

@@ -16,7 +16,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		doctorloginButton = (Button) findViewById(R.id.doctor_button);
+		doctorloginButton = (Button) findViewById(R.id.edit_profile_button);
 
 		doctorloginButton.setOnClickListener(new OnClickListener() {
 
@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
 			}
 
 		});
-		patientloginButton = (Button) findViewById(R.id.patient_button);
+		patientloginButton = (Button) findViewById(R.id.bookings_button);
 		patientloginButton.setOnClickListener(new OnClickListener() {
 			
 			@Override
